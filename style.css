@@ -1,0 +1,65 @@
+body {
+  background-color: black;
+  color: white;
+  /* Assuming Garamond is available on user systems */
+  font-family: Garamond, serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+
+.container {
+  text-align: center;
+}
+.resume-box {
+  display: inline-block;
+  border: 2px solid white;
+  padding: 1px 4px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 5em;
+  margin-bottom: 1em;
+}
+
+p {
+  font-size: 2em;
+  margin-bottom: 1.5em;
+}
+
+.grid-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap onto multiple lines */
+  justify-content: center; /* Centers the grid items horizontally */
+}
+
+.grid-item {
+  background-color: #f1f1f1; /* Light gray background for hover effect */
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  text-align: center; /* Center the image within the grid item */
+}
+
+.grid-item a {  /* Style for links within grid items */
+  display: block; /* Makes the entire grid item clickable */
+  width: 100%; /* Ensures link covers entire grid item area */
+  height: 100%;
+  text-decoration: none; /* Removes underline from link text */
+}
+
+.grid-item img {
+  width: 100%; /* Ensures image scales to fit width of grid item */
+  height: 100%; /* Ensures image scales to fit height of grid item */
+  object-fit: cover; /* Maintains aspect ratio while covering the grid item */
+}
+
+/* Optional: Add hover effect to grid items */
+.grid-item:hover {
+  background-color: #ddd; /* Change background color on hover */
+}
