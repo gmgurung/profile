@@ -10,16 +10,33 @@ body {
   align-items: center;
   min-height: 100vh;
 }
-
-
 .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
+
 }
-.resume-box {
-  display: inline-block;
-  border: 2px solid white;
-  padding: 1px 4px;
-  margin-bottom: 10px;
+.table-container {
+  width:80%;
+  height: auto;
+  overflow-x: auto;
+  text-align: center;
+  margin-bottom: 100px; /* Add some space between table and grid items */
+}
+
+.table-header {
+  width: 60%;
+  border-collapse: collapse;
+}
+
+.table-header td {
+  padding: 5px 15px;
+  border: 1px solid #ddd;
+}
+.table-header a {
+  color: inherit;
+  text-decoration: none;
 }
 
 h1 {
