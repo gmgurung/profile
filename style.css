@@ -81,3 +81,296 @@ p {
 .grid-item:hover {
   background-color: #ddd; /* Change background color on hover */
 }
+h1 {
+  position: fixed;      /* fix it to the top */
+  top: 0;               /* stick to the top edge */
+  left: 0;              /* stick to the left edge */
+  width: 100%;          /* span full width */
+  text-align: center;   /* center the text */
+  font-size: 3em;       /* adjust size if needed */
+  margin: 0;            /* remove default margin */
+  padding: 20px 0;      /* add some padding */
+  background-color: black;  /* match background */
+  z-index: 1000;        /* keep it above other elements */
+  border-bottom: 2px solid white;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 100px;  /* push content below fixed header */
+}
+h2 {
+  font-size: 2.5em;
+  margin-top: -110px;   /* was 150px — now much smaller */
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+  padding: 0 20px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 100px; /* reduce from 200px to 100px */
+}
+.custom-hr {
+  border: none;             /* Remove default border */
+  border-top: 2px solid white; /* Add custom line */
+  width: 200px;             /* Shorter width, adjust as you like */
+  margin: 30px auto;        /* Center and space it nicely */
+}
+ul {
+  list-style-type: disc;  /* or circle, square, etc. */
+  padding-left: 40px;     /* indent for bullets */
+  text-align: left;       /* align list text to the left */
+  max-width: 800px;       /* limit width like your paragraph */
+  margin: 20px auto;      /* center the list block */
+}
+
+li {
+  font-size: 1.2em;
+  margin-bottom: 10px;    /* space between items */
+}
+h2 {
+  font-size: 2.5em;
+  margin-top: 60px;   /* space above each new section */
+  margin-bottom: 20px;
+}
+p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto 30px auto;  /* bottom margin for spacing! */
+  padding: 0 20px;
+}
+h2 {
+  font-size: 2.5em;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.experience-title {
+  text-transform: uppercase;
+  font-size: 1.8em;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+  padding: 0 20px;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 40px;
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto 30px auto;
+}
+
+li {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+.table-section {
+  width: 80%;
+  max-width: 900px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.table-headers {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.table-headers h2 {
+  font-size: 2em;
+  margin: 0;
+}
+
+.info-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.info-table td {
+  border: 2px solid #fff;  /* visible white borders */
+  padding: 15px;
+  text-align: left;
+}
+
+.info-table tr:nth-child(even) {
+  background-color: #222;  /* optional shading */
+}
+
+.info-table tr:hover {
+  background-color: #444;  /* optional hover effect */
+}
+.info-table {
+  width: 80%;
+  max-width: 900px;
+  border-collapse: collapse;
+  margin: 50px auto;
+  color: white;
+}
+
+.info-table th, .info-table td {
+  border: 2px solid #fff;  /* solid white borders for ALL cells */
+  padding: 15px;
+  text-align: left;
+}
+
+.info-table th {
+  background-color: #333;  /* darker background for header row */
+  font-size: 1.8em;
+  text-align: center;
+}
+
+.info-table tr:nth-child(even) {
+  background-color: #222;  /* optional row shading */
+}
+
+.info-table tr:hover {
+  background-color: #444;  /* optional hover effect */
+}
+.projects-table {
+  width: 90%;
+  max-width: 1000px;
+  border-collapse: collapse;
+  margin: 50px auto;
+  color: white;
+}
+
+.projects-table th, .projects-table td {
+  border: 2px solid #fff; /* visible white borders */
+  padding: 15px;
+  text-align: left;
+}
+
+.projects-table th {
+  background-color: #333;
+  font-size: 1.5em;
+  text-transform: uppercase; /* capitalize headers */
+}
+
+.projects-table td strong {
+  font-weight: bold; /* ensure project names stay bold */
+}
+
+.projects-table tr:nth-child(even) {
+  background-color: #222;
+}
+
+.projects-table tr:hover {
+  background-color: #444;
+}
+
+h2 {
+  font-size: 2.5em;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+p em {
+  font-size: 1.2em;
+  line-height: 1.6;
+  display: block;
+  max-width: 1000px;
+  margin: 0 auto 30px auto;
+  padding: 0 20px;
+}
+.projects-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px; /* spacing between the two sections */
+  margin: 50px auto;
+}
+
+.project-section {
+  flex: 1 1 500px; /* flexible width, minimum 500px each */
+  max-width: 600px;
+}
+h2 {
+  font-size: 2.5em;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  max-width: 1000px;
+  margin: 0 auto 30px auto;
+  padding: 0 20px;
+}
+.about-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;  /* spacing between the two sections */
+  margin: 50px auto;
+}
+
+.about-section {
+  flex: 1 1 500px; /* flexible width, minimum 500px each */
+  max-width: 600px;
+}
+/* Base font for the whole body: Inconsolata */
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Inconsolata', monospace;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;  /* better for full-page flow */
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Use Impact for all headings */
+h1, h2, h3 {
+  font-family: Impact, Charcoal, sans-serif;
+}
+
+/* Rest of your styling can stay the same */
+.projects-table a {
+  color: inherit;         /* keeps text color same as surrounding text */
+  text-decoration: none;  /* remove underline */
+}
+
+.projects-table a:hover {
+  text-decoration: underline; /* optional: underline on hover */
+}
+.skills-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin: 30px auto;
+  max-width: 1200px;
+}
+
+.skill-block {
+  flex: 1 1 200px;
+  max-width: 250px;
+  font-family: 'Inconsolata', monospace;
+  font-size: 1.1em;
+  line-height: 1.5;
+  text-align: left;
+}
